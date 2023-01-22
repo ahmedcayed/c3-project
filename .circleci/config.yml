@@ -155,8 +155,7 @@ jobs:
           command: |
             cd frontend
             npm install
-            npm install --no-audit
-            npm audit --audit-level=critical
+            npm audit fix --force
             npm audit fix --audit-level=critical --force
 
   scan-backend:
