@@ -406,6 +406,7 @@ cloudfront-update:
       # Here's where you will add some code to rollback on failure
       - destroy-environment
       - revert-migrations
+      
 # cleanup:
 #     docker:
 #       # Docker image here
