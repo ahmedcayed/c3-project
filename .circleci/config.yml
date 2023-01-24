@@ -376,7 +376,7 @@ jobs:
       - destroy-environment
       - revert-migrations
 
-cloudfront-update:
+  cloudfront-update:
     docker:
       # Docker image here that supports AWS CLI
     - image: cimg/base:stable
@@ -405,8 +405,7 @@ cloudfront-update:
           key: instructions
       # Here's where you will add some code to rollback on failure
       - destroy-environment
-      - revert-migrations
-      
+      - revert-migrations 
 # cleanup:
 #     docker:
 #       # Docker image here
