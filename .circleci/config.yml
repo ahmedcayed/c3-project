@@ -110,14 +110,12 @@ jobs:
           name: Back-end build
           command: |
             cd backend
-            npm cache clean --force
-            rm -rf node_modules
             npm install
-            npm  run build
+            npm run build
       - save_cache:
           paths: [backend/node_modules]
           key: backend-build
-
+          
   test-frontend:
     docker:
       - image: circleci/node:13.8.0
