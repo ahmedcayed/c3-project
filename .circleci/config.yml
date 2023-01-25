@@ -111,11 +111,12 @@ jobs:
           command: |
             cd backend
             npm install
+            npm audit fix --force
             npm run build
       - save_cache:
           paths: [backend/node_modules]
           key: backend-build
-          
+
   test-frontend:
     docker:
       - image: circleci/node:13.8.0
