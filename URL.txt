@@ -2,7 +2,7 @@ URL01
 https://github.com/ahmedcayed/c3-project
 
 URL02
-http://udapeople-1913a51.s3-website-us-east-1.amazonaws.com
+http://udapeople-d7287be.s3-website-us-east-1.amazonaws.com
 
 URL03
 https://d7frit059jrc7.cloudfront.net
