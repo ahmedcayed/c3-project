@@ -112,7 +112,7 @@ jobs:
             cd backend
             npm cache clean --force
             npm install
-            npm  run build -prod
+            npm  run build
       - save_cache:
           paths: [backend/node_modules]
           key: backend-build
